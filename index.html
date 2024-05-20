@@ -6,39 +6,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Calculator</title>
         <link rel="stylesheet" href="./css/style.css">
-    </head>
-    <body>
-       <div class="container">
-        <input class="screen" type="text" readonly placeholder="0">
-        <div class="numbers">
-        <button class="buttons">1</button>
-        <button class="buttons">2</button>
-        <button class="buttons">3</button>
-        <br>
-        <button class="buttons">4</button>
-        <button class="buttons">5</button>
-        <button class="buttons">6</button>
-        <br>
-        <button class="buttons">7</button>
-        <button class="buttons">8</button>
-        <button class="buttons">9</button>
-        <button class="buttons">0</button>
-    </div>
-    <div class="operators-containers">
-        <button class="equal">=</button>
-        <button class="operators">+</button>
-        <button class="operators">-</button>
-        <br>
-        <button class="operators">*</button>
-        <button class="operators">/</button>
-        <button class="operators">.</button>
-    </div>
-    <div class="other-buttons">
-        <button class="clear">
-            C
-        </button>
-    </div>
-    </div>
-   <script src="./scripts/code.js"></script>
-    </body>
-    </html>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Calculator</title>
+            <link rel="stylesheet" href="./css/style.css">
+        </head>
+        <body>
+            <div class="container">
+           <input class="screen" type="text" name="display" placeholder="0" readonly data-entry>
+          <button  class="clear">AC</button>
+          <button>%</button>
+          <button onclick="display('3.141592653589793238462643383279502884197')">
+            3.14
+          </button>
+          <button onclick="display('7')">7</button>
+          <button onclick="display('8')">8</button>
+          <button data-operator onclick="display('/')">/</button>
+          <button onclick="display('9')">9</button>
+          <button onclick="display('4')">4</button>
+          <button data-operator onclick="display('*')" >X</button>
+          <button onclick="display('5')">5</button>
+          <button onclick="display('6')">6</button>
+          <button data-operator onclick="display('+')">+</button>
+          <button onclick="display('1')">1</button>
+          <button onclick="display('2')">2</button>
+          <button data-operator onclick="display('-')">-</button>
+          <button onclick="display('3')">3</button>
+          <button onclick="display('0')">0</button>
+          <button data-operator onclick="display('.')">.</button>
+          <button type="button" equal>=</button>
+        </div>
+        <script src="./scripts/code.js"></script>
+        </body>
+        </html>
